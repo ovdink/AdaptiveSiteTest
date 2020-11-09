@@ -1,170 +1,170 @@
 body {
-	font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: aqua;
 }
 * {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 li {
-	list-style: none;
-	display: flex;
+  list-style: none;
+  display: flex;
 }
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 /*=== HEADER ===*/
 header {
-	background-color: #f6f6f6; 
-	padding: 22px 0;
+  background-color: #f6f6f6;
+  padding: 22px 0;
 }
 .headerContainer {
-	/*width: 1395px;*/
-	width: 90%;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
+  /*width: 1395px;*/
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 .headerContainer a {
-	color: black;
-	font-size: 16px;
-	padding: 28px 9px;
-	margin-right: 61px;
-	border-radius: 20px;
-	transition: background-color 0.15s linear;
-	text-transform: uppercase;
+  color: black;
+  font-size: 16px;
+  padding: 28px 9px;
+  margin-right: 61px;
+  border-radius: 20px;
+  transition: background-color 0.15s linear;
+  text-transform: uppercase;
 }
 .headerContainer a:hover {
-	background-color: #ffea00;
-	border-radius: 20px;
+  background-color: #ffea00;
+  border-radius: 20px;
 }
 #menuCheckbox {
-	display: none;
+  display: none;
 }
 ul {
-	display: flex;
+  display: flex;
 }
 nav {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 420px) {
-	.headerContainer {
-		width: 100%;
-		display: flex;
-		justify-content: space-around;
-	}
-	.mainMenu {
-		display: none;
-		position: relative;
-		top: 30px;
-		right: 115px;
-	}
-	.mainMenu li {
-		width: 100%;
-		display: block;
-		font-size: 12px;
-	}
-	.mainMenu a {
-		display: block;
-		padding: 8px;
-	}
-	.toggleButton {
-		text-align: center;
-		display: block;
-		cursor: pointer;
-		color: black;
-		transition: background-color 0.15s linear;
-		margin-top: 10px;
-		padding: 20px;
-		border-radius: 20px;
-	}
-	.toggleButton:hover {
-		background-color: #ffea00;
-		border-radius: 20px;
-		padding: 20px;
-	}
-	.toggleButton:after {
-		content: attr(data-open);
-		display: block;
-		text-transform: uppercase;
-	}
-	#menuCheckbox:checked + nav[role='navigation'] .mainMenu {
-		display: block;
-	}
-	#menuCheckbox:checked + nav[role='navigation'] .toggleButton:after {
-		content: attr(data-close);
-		text-transform: uppercase;
-	}
-	.headerContainer a {
-		margin-right: -65px;
-	}
+  .headerContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .mainMenu {
+    display: none;
+    position: relative;
+    top: 30px;
+    right: 115px;
+  }
+  .mainMenu li {
+    width: 100%;
+    display: block;
+    font-size: 12px;
+  }
+  .mainMenu a {
+    display: block;
+    padding: 8px;
+  }
+  .toggleButton {
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    color: black;
+    transition: background-color 0.15s linear;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .toggleButton:hover {
+    background-color: #ffea00;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .toggleButton:after {
+    content: attr(data-open);
+    display: block;
+    text-transform: uppercase;
+  }
+  #menuCheckbox:checked + nav[role='navigation'] .mainMenu {
+    display: block;
+  }
+  #menuCheckbox:checked + nav[role='navigation'] .toggleButton:after {
+    content: attr(data-close);
+    text-transform: uppercase;
+  }
+  .headerContainer a {
+    margin-right: -65px;
+  }
 }
 /*=== / HEADER ===*/
 
 /*=== MAIN ===*/
 .topContainer {
-	width: 85%;
-	margin: 0 auto;
+  width: 85%;
+  margin: 0 auto;
 }
 .topSlide {
-	background: url(img/slider_bg.jpg) no-repeat;
-	background-size: 100%;
-	padding-top: 120px;
-	padding-bottom: 304px;
+  background: url(img/slider_bg.jpg) no-repeat;
+  background-size: 100%;
+  padding-top: 120px;
+  padding-bottom: 304px;
 }
 .topSlide h2 {
-	display: inline;
-	background: #ffea00;
-	font-size: 70px;
-	padding: 0 13px;
-	/*margin: 13px;*/
+  display: inline;
+  background: #ffea00;
+  font-size: 70px;
+  padding: 0 13px;
+  /*margin: 13px;*/
 }
 .topSlide :nth-child(2) {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .topSlide p {
-	display: inline;
-	background: #414146;
-	padding: 0 5px;
-	color: white;
-	font-size: 24px;
+  display: inline;
+  background: #414146;
+  padding: 0 5px;
+  color: white;
+  font-size: 24px;
 }
 .midContainer {
-	width: 80%;
-	margin: 0 auto;
-	text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
 }
 .midSlide h3 {
-	font-size: 35px;
-	color: #424147;
-	font-weight: normal;
-	margin-top: 90px;
-	margin-bottom: 28px;
+  font-size: 35px;
+  color: #424147;
+  font-weight: normal;
+  margin-top: 90px;
+  margin-bottom: 28px;
 }
 .secondTitle {
-	font-size: 24px;
-	color: #424147;
-	margin-bottom: 65px;
+  font-size: 24px;
+  color: #424147;
+  margin-bottom: 65px;
 }
 .botCard {
-	background: #414146;
+  background: #414146;
 }
-.firstP {;
-	color: #ffffff;
-	font-size: 20px;
+.firstP {
+  color: #ffffff;
+  font-size: 20px;
 }
 .picFlexContainer {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-.otherP {;
-	color: #ffffff;
-	font-size: 13px;
+.otherP {
+  color: #ffffff;
+  font-size: 13px;
 }
 .topCard {
-	background: #ffea00;
-	padding: 30px 20px;
+  background: #ffea00;
+  padding: 30px 20px;
 }
-
 
 /*=== / MAIN ===*/
